@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: auto 100px;
+  min-width: 1000px;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.container .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .logo img {
+  padding-right: 10px;
+}
+
+.container .header .logo p {
+  color: #4468e2;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header .menu a {
+  text-decoration: none;
+  padding: 0 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.container .header .contact {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  padding: 5px 16px;
+  background-color: #4468e2;
+  border-radius: 26px;
+  font-weight: 300;
+}
+
+.container .slider {
+  background-image: url("imgs/slider2.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  padding: 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .row h1 {
+  font-size: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.container .row P {
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+}
+
+.container .row .last-slide-div {
+  position: relative;
+  margin-top: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  max-width: 800px;
+  background-color: rgba(243, 237, 237, 0.72);
+}
+
+.container .row .last-slide-div div {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .row .last-slide-div h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.container .row .last-slide-div p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #7e7e7e;
+}
+
+.container .row .last-slide-div .btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  color: white;
+  background-color: #4468e2;
+  border-radius: 7px;
+  padding: 7px 10px;
+}
+
+.container .row .last-slide-div .togo::before {
+  content: "";
+  width: 2px;
+  height: 59px;
+  background-color: #9a9797;
+  position: absolute;
+  left: 270px;
+}
+
+.container .row .last-slide-div .check-in::before {
+  content: "";
+  width: 2px;
+  height: 59px;
+  background-color: #9a9797;
+  position: absolute;
+  left: 403px;
+}
+
+.container .groupe37 {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .groupe37 .section {
+  margin: 10px;
+}
+
+.container .groupe37 .section i {
+  color: blue;
+  background-color: #dbe5f3;
+  height: 70px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+}
+
+.container .groupe37 .section :nth-child(2) {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #0f0f0f;
+  margin: 15px 0;
+}
+
+.container .groupe37 .section :nth-child(3) {
+  font-family: "Poppins", sans-serif;
+  color: #0f0f0f;
+  margin: 15px 0;
+}
+
+.container .parent-destination {
+  padding: 100px 0;
+}
+
+.container .parent-destination .title-destination {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.container .parent-destination .title-destination h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .parent-destination .travel-type-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .parent-destination .travel-type-parent .travel-type {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  border-bottom: 1px solid #a7a7a7;
+  padding-bottom: 10px;
+}
+
+.container .parent-destination .travel-type-parent .travel-type p {
+  font-family: "Poppins", sans-serif;
+}
+
+.container .parent-destination .travel-type-parent .travel-type p:hover::before {
+  content: "";
+  background-color: #a7a7a7;
+  width: 170px;
+  height: 3px;
+  position: absolute;
+  top: 32px;
+}
+/*# sourceMappingURL=main.css.map */
