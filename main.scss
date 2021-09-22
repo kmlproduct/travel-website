@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 .container {
-  margin: auto 100px;
+  padding: 0 100px;
+
   min-width: 1000px;
   .header {
     display: flex;
@@ -132,6 +133,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .parent-section1,
+    .parent-section2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .section {
       margin: 10px;
       i {
@@ -390,6 +397,14 @@
         height: 30px;
         margin: 10px;
       }
+    }
+  }
+}
+@media (max-width: 769px) {
+  .container {
+    padding: 0 20px;
+    .groupe37 {
+      flex-flow: wrap;
     }
   }
 }
