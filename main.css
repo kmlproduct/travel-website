@@ -390,4 +390,203 @@
           justify-content: center;
   direction: rtl;
 }
+
+.container .blogs {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container .blogs h1 {
+  padding-bottom: 30px;
+}
+
+.container .blogs .blogs-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .blogs .blogs-slide .left-slide {
+  background-image: url("imgs/train.jpg");
+  background-size: cover;
+  width: 50%;
+  height: 413px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .blogs .blogs-slide .left-slide div {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  max-width: 400px;
+}
+
+.container .blogs .blogs-slide .right-slide {
+  margin-left: 10px;
+  width: 50%;
+  height: 413px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .blogs .blogs-slide .right-slide :nth-child(1) {
+  background-image: url("imgs/plane.jpg");
+  background-size: cover;
+  margin-bottom: 10px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.container .blogs .blogs-slide .right-slide :nth-child(2) {
+  background-image: url("imgs/train.jpg");
+  background-size: cover;
+  height: 100%;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.container .customers {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container .customers h1 {
+  padding-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.container .customers .parent-custo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .customers .section-cust1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+
+.container .customers .section-cust1 .log img {
+  margin-right: 20px;
+  color: #707070;
+}
+
+.container .customers .section-cust1 .cust-text {
+  text-align: left;
+}
+
+.container .customers .section-cust1 .cust-text p {
+  padding-bottom: 20px;
+  color: #707070;
+}
+
+.container .customers .section-cust1 .cust-text .profil-custo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .customers .section-cust1 .cust-text .profil-custo img {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.container .customers .section-cust1 .cust-text .profil-custo p {
+  padding: 0;
+}
+
+.container .customers .section-cust1 .cust-text .profil-custo :nth-child(1) {
+  color: black;
+}
+
+.container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: #e1e8f8;
+  border-radius: 6px;
+}
+
+.container .footer .copyright {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .footer .footer-menu a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.container .footer .footer-menu :not(:last-child) {
+  margin-right: 20px;
+}
+
+.container .footer .footer-media img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
 /*# sourceMappingURL=main.css.map */
