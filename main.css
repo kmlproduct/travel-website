@@ -8,6 +8,7 @@
 
 .container {
   padding: 0 100px;
+  overflow: hidden;
 }
 
 .container .header {
@@ -75,11 +76,114 @@
   font-weight: 300;
 }
 
+.container .header .humberger-menu {
+  display: none;
+  right: 0;
+  position: relative;
+}
+
+.container .header .humberger-menu div:nth-child(1) {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 2px;
+  width: 18px;
+  background-color: #444;
+}
+
+.container .header .humberger-menu div:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  height: 2px;
+  top: 5px;
+  width: 18px;
+  background-color: #444;
+}
+
+.container .header .humberger-menu div:nth-child(3) {
+  position: absolute;
+  right: 10px;
+  height: 2px;
+  top: 10px;
+  width: 18px;
+  background-color: #444;
+}
+
+.container .header .humberger-menu .div1 {
+  position: absolute;
+  background-color: red;
+  font-weight: bold;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-animation: animate 0.7s forwards;
+          animation: animate 0.7s forwards;
+}
+
+.container .header .humberger-menu .div2 {
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.container .header .humberger-menu .div3 {
+  background-color: red;
+  font-weight: bold;
+  top: 5px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-animation: animate2 0.7s forwards;
+          animation: animate2 0.7s forwards;
+}
+
+@-webkit-keyframes animate {
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(5px) rotateZ(-45deg);
+            transform: translateY(5px) rotateZ(-45deg);
+  }
+}
+
+@keyframes animate {
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(5px) rotateZ(-45deg);
+            transform: translateY(5px) rotateZ(-45deg);
+  }
+}
+
+@-webkit-keyframes animate2 {
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px) rotateZ(45deg);
+            transform: translateY(-5px) rotateZ(45deg);
+  }
+}
+
+@keyframes animate2 {
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px) rotateZ(45deg);
+            transform: translateY(-5px) rotateZ(45deg);
+  }
+}
+
 .container .slider {
   background-image: url("imgs/slider2.jpg");
   background-size: cover;
   border-radius: 10px;
-  padding: 120px 0;
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +294,7 @@
 }
 
 .container .groupe37 {
-  padding: 100px 0;
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,13 +389,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 800px;
   border-bottom: 1px solid #a7a7a7;
   padding-bottom: 10px;
 }
 
 .container .parent-destination .travel-type-parent .travel-type p {
   font-family: "Poppins", sans-serif;
+}
+
+.container .parent-destination .travel-type-parent .travel-type :not(:last-child) {
+  margin-right: 10px;
 }
 
 .container .parent-destination .travel-type-parent .travel-type p:hover::before {
@@ -307,9 +414,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
 }
@@ -651,9 +758,22 @@
   .container {
     padding: 0 20px;
   }
+  .container .header .menu,
+  .container .header .contact {
+    display: none;
+  }
+  .container .header .humberger-menu {
+    display: block;
+  }
   .container .groupe37 {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+  }
+  .container .parent-destination .title-destination h1 {
+    font-size: 30px;
+  }
+  .container .parent-destination .travel-type-parent {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

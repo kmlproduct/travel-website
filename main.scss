@@ -5,7 +5,7 @@
 }
 .container {
   padding: 0 100px;
-
+  overflow: hidden;
   .header {
     display: flex;
     justify-content: space-between;
@@ -45,12 +45,81 @@
       border-radius: 26px;
       font-weight: 300;
     }
+    .humberger-menu {
+      display: none;
+      right: 0;
+      position: relative;
+      div:nth-child(1) {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        height: 2px;
+        width: 18px;
+        background-color: #444;
+      }
+      div:nth-child(2) {
+        position: absolute;
+        right: 10px;
+        height: 2px;
+        top: 5px;
+        width: 18px;
+        background-color: #444;
+      }
+      div:nth-child(3) {
+        position: absolute;
+        right: 10px;
+        height: 2px;
+        top: 10px;
+        width: 18px;
+        background-color: #444;
+      }
+      .div1 {
+        position: absolute;
+        background-color: red;
+        font-weight: bold;
+        transition: all 1s ease-in-out;
+        animation: animate 0.7s forwards;
+      }
+      .div2 {
+        opacity: 0;
+        transition: all 2s ease;
+      }
+      .div3 {
+        background-color: red;
+        font-weight: bold;
+        top: 5px;
+        transition: all 1s ease-in-out;
+        animation: animate2 0.7s forwards;
+      }
+    }
+    @keyframes animate {
+      // 0% {
+      //   transform: translateY(0px);
+      // }
+      50% {
+        transform: translateY(5px);
+      }
+      100% {
+        transform: translateY(5px) rotateZ(-45deg);
+      }
+    }
+    @keyframes animate2 {
+      // 0% {
+      //   transform: translateY(0px);
+      // }
+      50% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(-5px) rotateZ(45deg);
+      }
+    }
   }
   .slider {
     background-image: url("imgs/slider2.jpg");
     background-size: cover;
     border-radius: 10px;
-    padding: 120px 0;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
   }
@@ -128,7 +197,7 @@
     }
   }
   .groupe37 {
-    padding: 100px 0;
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,13 +252,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 800px;
         border-bottom: 1px solid #a7a7a7;
         padding-bottom: 10px;
 
         p {
           font-family: "Poppins", sans-serif;
         }
+        :not(:last-child) {
+          margin-right: 10px;
+        }
+
         p:hover::before {
           content: "";
           background-color: #a7a7a7;
@@ -203,7 +275,7 @@
   }
   .cities {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: wrap;
     .section {
       display: flex;
@@ -449,8 +521,28 @@
 @media (max-width: 769px) {
   .container {
     padding: 0 20px;
+    .header {
+      .menu,
+      .contact {
+        display: none;
+      }
+      .humberger-menu {
+        display: block;
+      }
+    }
+
     .groupe37 {
       flex-flow: wrap;
+    }
+    .parent-destination {
+      .title-destination {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      .travel-type-parent {
+        font-size: 10px;
+      }
     }
   }
 }
