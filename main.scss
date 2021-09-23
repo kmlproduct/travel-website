@@ -149,25 +149,26 @@
       padding: 10px;
       display: flex;
       justify-content: center;
-      align-items: center;
       border-radius: 5px;
-      max-width: 800px;
       background-color: rgba(243, 237, 237, 0.72);
+      align-items: center;
       div {
-        padding: 0 20px;
+        padding: 0 9px;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
       }
       h3 {
         font-family: "Poppins", sans-serif;
         font-weight: normal;
         font-size: 20px;
       }
-      p {
+      input {
         font-family: "Poppins", sans-serif;
         font-weight: normal;
-        font-size: 16px;
         color: #7e7e7e;
+        border: none;
+        background: none;
       }
       .btn {
         font-family: "Poppins", sans-serif;
@@ -178,21 +179,9 @@
         border-radius: 7px;
         padding: 7px 10px;
       }
-      .togo::before {
-        content: "";
-        width: 2px;
-        height: 59px;
-        background-color: #9a9797;
-        position: absolute;
-        left: 270px;
-      }
-      .check-in::before {
-        content: "";
-        width: 2px;
-        height: 59px;
-        background-color: #9a9797;
-        position: absolute;
-        left: 403px;
+      .togo,
+      .check-in {
+        border-right: 2px solid #9a9797;
       }
     }
   }
@@ -268,7 +257,7 @@
           width: 170px;
           height: 3px;
           position: absolute;
-          top: 32px;
+          top: 28px;
         }
       }
     }
@@ -470,7 +459,7 @@
     }
   }
 }
-@media (max-width: 910px) {
+@media (max-width: 921px) {
   .container {
     padding: 0 30px;
     .row {
@@ -485,33 +474,18 @@
         padding: 5px;
         div {
           padding: 0 10px;
+          h3 {
+            font-size: 14px;
+          }
+          p {
+            font-size: 12px;
+          }
         }
-        h3 {
-          font-size: 14px;
-        }
-        p {
-          font-size: 12px;
-        }
+
         .btn {
           font-size: 13px;
           color: white;
           padding: 5px 7px;
-        }
-        .togo::before {
-          content: "";
-          width: 2px;
-          height: 37px;
-          background-color: #9a9797;
-          position: absolute;
-          left: 180px;
-        }
-        .check-in::before {
-          content: "";
-          width: 2px;
-          height: 37px;
-          background-color: #9a9797;
-          position: absolute;
-          left: 266px;
         }
       }
     }
@@ -545,7 +519,21 @@
         display: block;
       }
     }
-
+    .row {
+      .last-slide-div {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        div {
+          margin: 10px 0;
+          align-items: flex-start;
+        }
+        .togo,
+        .check-in {
+          border: none;
+        }
+      }
+    }
     .groupe37 {
       flex-flow: wrap;
     }
@@ -556,13 +544,23 @@
         }
       }
       .travel-type-parent {
-        font-size: 10px;
+        font-size: 16px;
+        .travel-type {
+          flex-direction: column;
+          border: none;
+          p {
+            margin: 10px 0;
+          }
+          p:hover::before {
+            content: "";
+            width: 0;
+            height: 0;
+          }
+        }
       }
     }
-    .customers {
-      .parent-custo {
-        flex-direction: column;
-      }
+    .parent-custo {
+      flex-flow: wrap;
       .section-cust1 {
         display: flex;
         justify-content: space-between;
