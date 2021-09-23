@@ -358,7 +358,6 @@
         }
       }
       .right-slide {
-        margin-left: 10px;
         width: 50%;
         height: 413px;
         display: flex;
@@ -516,6 +515,22 @@
         }
       }
     }
+    .blogs {
+      h1 {
+        padding-bottom: 30px;
+      }
+      .blogs-slide {
+        flex-direction: column;
+        .left-slide {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+        .right-slide {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 @media (max-width: 769px) {
@@ -542,6 +557,22 @@
       }
       .travel-type-parent {
         font-size: 10px;
+      }
+    }
+    .customers {
+      .parent-custo {
+        flex-direction: column;
+      }
+      .section-cust1 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+      }
+    }
+    .footer {
+      flex-direction: column;
+      div {
+        margin: 5px 0;
       }
     }
   }
