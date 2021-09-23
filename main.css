@@ -779,6 +779,13 @@
     -ms-flex-flow: wrap;
         flex-flow: wrap;
   }
+  .container .groupe37 .parent-section1,
+  .container .groupe37 .parent-section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .container .parent-destination .title-destination h1 {
     font-size: 30px;
   }

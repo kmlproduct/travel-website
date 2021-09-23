@@ -536,6 +536,10 @@
     }
     .groupe37 {
       flex-flow: wrap;
+      .parent-section1,
+      .parent-section2 {
+        flex-direction: column;
+      }
     }
     .parent-destination {
       .title-destination {
