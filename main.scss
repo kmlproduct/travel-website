@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
     .logo {
       display: flex;
       justify-content: center;
@@ -169,6 +169,8 @@
         color: #7e7e7e;
         border: none;
         background: none;
+        width: 100%;
+        outline: none;
       }
       .btn {
         font-family: "Poppins", sans-serif;
@@ -182,6 +184,11 @@
       .togo,
       .check-in {
         border-right: 2px solid #9a9797;
+      }
+      .check-out,
+      .togo,
+      .check-in {
+        width: 100%;
       }
     }
   }
@@ -223,17 +230,18 @@
     }
   }
   .parent-destination {
-    padding: 100px 0;
+    padding-bottom: 100px;
     .title-destination {
       text-align: center;
       padding: 30px 0;
       h1 {
-        font-size: 40px;
+        font-size: 50px;
         font-weight: bold;
         font-family: "Poppins", sans-serif;
       }
     }
     .travel-type-parent {
+      margin-bottom: 20px;
       display: flex;
       justify-content: center;
       .travel-type {
@@ -242,7 +250,6 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #a7a7a7;
-        padding-bottom: 10px;
 
         p {
           font-family: "Poppins", sans-serif;
@@ -257,23 +264,24 @@
           width: 170px;
           height: 3px;
           position: absolute;
-          top: 28px;
+          bottom: 0;
         }
       }
     }
   }
   .cities {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: wrap;
     .section {
       display: flex;
       flex-direction: column;
-      margin: 20px;
+
       img {
         width: 300px;
         height: 150px;
         margin: 10px 0;
+        border-radius: 7px;
       }
       :nth-child(2) {
         font-family: "Poppins", sans-serif;
@@ -321,9 +329,12 @@
   }
   .blogs {
     text-align: center;
-    padding: 50px 0;
+    padding-bottom: 50px;
     h1 {
       padding-bottom: 30px;
+      font-size: 40px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
     }
     .blogs-slide {
       display: flex;
@@ -332,12 +343,14 @@
       .left-slide {
         background-image: url("imgs/train.jpg");
         background-size: cover;
+        background-position: center;
         width: 50%;
         height: 413px;
         margin-right: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 7px;
         div {
           font-family: "Poppins", sans-serif;
           font-weight: bold;
@@ -347,6 +360,7 @@
         }
       }
       .right-slide {
+        font-family: "Poppins", sans-serif;
         width: 50%;
         height: 413px;
         display: flex;
@@ -357,24 +371,29 @@
           background-size: cover;
           margin-bottom: 10px;
           height: 100%;
-
+          background-position: center;
           display: flex;
           justify-content: center;
           align-items: center;
           color: white;
-          font-size: 30px;
+          font-size: 35px;
+          padding: 0 20px;
+          border-radius: 7px;
         }
         :nth-child(2) {
           background-image: url("imgs/train.jpg");
           background-size: cover;
           height: 100%;
           margin-top: 10px;
-
+          background-position: center;
+          display: flex;
           display: flex;
           justify-content: center;
           align-items: center;
           color: white;
-          font-size: 30px;
+          font-size: 35px;
+          padding: 0 20px;
+          border-radius: 7px;
         }
       }
     }
@@ -451,10 +470,14 @@
       }
     }
     .footer-media {
-      img {
-        width: 30px;
-        height: 30px;
-        margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      i {
+        background: #000000;
+        margin-left: 4px;
+        padding: 10px;
+        border-radius: 50%;
+        color: white;
       }
     }
   }
@@ -563,6 +586,16 @@
         }
       }
     }
+    .blogs {
+      .blogs-slide {
+        .left-slide {
+          div {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
     .parent-custo {
       flex-flow: wrap;
       .section-cust1 {
